@@ -109,7 +109,7 @@ Model size: 29.75 M trainable parameters, almost all in the 18 projection MLPs, 
 
 **How lr and λ were chosen.** We trained candidate settings on seed 0, folds 1–2, and picked the one with the best
 *validation* AUPR. Results:
-- **lr:** at the paper's 0.005 the model overfitted within a few hundred epochs. Validation AUPR went from 0.13 to 0.35 at lr 0.001.
+- **lr:** at the paper's 0.005 the model learned more slowly. Within the same 1,200-epoch limit, validation AUPR reached 0.13 at lr 0.005 and 0.35 at lr 0.001.
 - **λ:** lowering it to 50 gave a further +0.03 on validation.
 - **Didn't help at lr 0.001:** dropout 0.6, weight decay 1e-4, lr 0.0005, λ 10, hidden size 64/256, top-k 10/25 and
   identity-free features.

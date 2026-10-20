@@ -14,3 +14,6 @@ runs/*
 Thumbs.db
 .vscode/
 .idea/
+
+# Report drafts (Overleaf project, reference PDFs): kept local
+report/
