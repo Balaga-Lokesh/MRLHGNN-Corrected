@@ -1,0 +1,6 @@
+# tested with Python 3.12 on Windows 11 + RTX 5070 (CUDA 12.8); no DGL needed
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+torch>=2.0
